@@ -7,4 +7,8 @@ resource "azurerm_resource_group" "resource_map" {
   location = each.value
 }
 
-dhoom 3 
+resource "azurerm_resource_group" "resource_map" {
+  name = "phonebook"
+  location = "centralus"
+}
+
